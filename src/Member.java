@@ -28,9 +28,12 @@ public class Member extends User {
     }
     @Override
     public void displayDashboard() {
-        System.out.println("This is Member Dashboard and Book Borrowed is : " +getBorrowedBooksCount());
+        System.out.println("This is Member Dashboard user id is : " +getUserId() + "and Book Borrowed is : " +getBorrowedBooksCount());
 
     }
+
+
+
     @Override
     public boolean canBorrowBooks() {
         return borrowedBooksCount < MAX_BORROW_LIMIT;
