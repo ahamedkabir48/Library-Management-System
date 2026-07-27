@@ -1,3 +1,5 @@
+import java.awt.print.Book;
+
 public class Librarian extends User{
 
     private String employeeNumber;
@@ -23,5 +25,11 @@ public class Librarian extends User{
     @Override
     public boolean canBorrowBooks() {
         return false;
+    }
+    public void addBook(Book book) {
+            //will implement in next module
+    }
+    public void removeBook(Book book) {
+        //will implement in next module
     }
 }
