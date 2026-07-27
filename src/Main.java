@@ -10,5 +10,15 @@ public class Main {
 
         librarian.displayDashboard();
         System.out.println(librarian.canBorrowBooks());
+
+        Member member2 = new Member("Kabir", "kabir@gmail.com", 3);
+
+        member2.displayDashboard();
+        System.out.println("Can Borrow Books: " + member2.canBorrowBooks());
+
+
+        Member member = new Member("Mani", "Mani@gmail.com" , 6);
+        member.displayDashboard();
+        System.out.println("Can Borrow Books: " + member.canBorrowBooks());
     }
 }

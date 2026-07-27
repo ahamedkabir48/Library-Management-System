@@ -1,11 +1,22 @@
 public class Librarian extends User{
+
+    private String employeeNumber;
+
+    public String getEmployeeNumber() {
+        return employeeNumber;
+    }
+
+    public void setEmployeeNumber(String employeeNumber) {
+        this.employeeNumber = employeeNumber;
+    }
+
     public Librarian(String username, String password) {
         super(username, password);
     }
 
     @Override
     public void displayDashboard() {
-        System.out.println("Librarian");
+        System.out.println("This is Librarian Dashboard Employee Number is : " + getEmployeeNumber() );
     }
 
 
